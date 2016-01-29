@@ -39,6 +39,7 @@ public class driveTrain extends Subsystem {
     private final SpeedController front_Right = RobotMap.driveTrainFront_Right;
     private final SpeedController rear_Left = RobotMap.driveTrainRear_Left;
     private final SpeedController rear_Right = RobotMap.driveTrainRear_Right;
+    
     private final Encoder front_Left_Encoder = RobotMap.driveTrainFront_Left_Encoder;
     private final Encoder front_Right_Encoder = RobotMap.driveTrainFront_Right_Encoder;
     private final Encoder rear_Left_Encoder = RobotMap.driveTrainRear_Left_Encoder;
