@@ -20,7 +20,7 @@ Children:
           validators: &id003 [PWMOutput]
           value: '0'
       Base: Speed Controller
-      Name: Front_Left
+      Name: Motor_Left_Front
     - Children: []
       Properties:
         Type: !!robotbuilder.data.properties.ChoicesProperty
@@ -36,7 +36,7 @@ Children:
           validators: *id003
           value: '1'
       Base: Speed Controller
-      Name: Front_Right
+      Name: Motor_Left_Rear
     - Children: []
       Properties:
         Type: !!robotbuilder.data.properties.ChoicesProperty
@@ -52,7 +52,7 @@ Children:
           validators: *id003
           value: '2'
       Base: Speed Controller
-      Name: Rear_Left
+      Name: Motor_Right_Front
     - Children: []
       Properties:
         Type: !!robotbuilder.data.properties.ChoicesProperty
@@ -68,7 +68,7 @@ Children:
           validators: *id003
           value: '3'
       Base: Speed Controller
-      Name: Rear_Right
+      Name: Motor_Right_Rear
     - Children: []
       Properties:
         Channel A Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
@@ -104,7 +104,7 @@ Children:
           validators: &id009 [DigitalChannel]
           value: '1'
       Base: Quadrature Encoder
-      Name: Front_Left_Encoder
+      Name: Encoder_Left_Front
     - Children: []
       Properties:
         Channel A Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
@@ -136,7 +136,7 @@ Children:
           validators: *id009
           value: '3'
       Base: Quadrature Encoder
-      Name: Front_Right_Encoder
+      Name: Encoder_Left_Rear
     - Children: []
       Properties:
         Channel A Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
@@ -168,7 +168,7 @@ Children:
           validators: *id009
           value: '5'
       Base: Quadrature Encoder
-      Name: Rear_Left_Encoder
+      Name: Encoder_Right_Front
     - Children: []
       Properties:
         Channel A Channel (Digital): !!robotbuilder.data.properties.ChoicesProperty
@@ -200,7 +200,7 @@ Children:
           validators: *id009
           value: '7'
       Base: Quadrature Encoder
-      Name: Rear_Right_Encoder
+      Name: Encoder_Right_Rear
     - Children: []
       Properties:
         Sensitivity: !!robotbuilder.data.properties.DoubleProperty {default: 0.007,
@@ -212,7 +212,7 @@ Children:
           validators: [AnalogInput]
           value: '0'
       Base: AnalogGyro
-      Name: DriveGyro
+      Name: Robot_Gyro
     Properties:
       Default command parameters: !!robotbuilder.data.properties.ParametersProperty
         default: []
@@ -220,7 +220,7 @@ Children:
         validators: null
         value: []
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Default Command, type: Command, validators: null, value: Mecanum Drive}
+        name: Default Command, type: Command, validators: null, value: None}
       Constants: !!robotbuilder.data.properties.ConstantsProperty
         default: []
         name: Constants
@@ -281,7 +281,7 @@ Children:
       Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
         name: Button on SmartDashboard, validators: null, value: true}
     Base: Command
-    Name: Mecanum Drive
+    Name: Drive Robot Oriented Mecanum
   Properties: {}
   Base: Commands
   Name: Commands
