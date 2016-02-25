@@ -18,7 +18,7 @@ import org.usfirst.frc3244.SirAntsABot2.Robot;
  *
  */
 public class Drive_Robot_Field_Oriented_Mecanum extends Command {
-	double speedScale = .5;
+	
 	double max = .50;
 	double min = .50;
 	double deadband = .2;
@@ -52,24 +52,11 @@ public class Drive_Robot_Field_Oriented_Mecanum extends Command {
     	double r = Robot.oi.xbox_1.getRawAxis(4);
     	double gyro = Robot.driveTrain.my_Get_Gyro();
     	
-    	//Make sure the Sticks are outside the Deadband
-    	x = Robot.driveTrain.my_Deadband(x, deadband);
-    	y = Robot.driveTrain.my_Deadband(x, deadband);
-    	r = Robot.driveTrain.my_Deadband(x, deadband);
+    	x = Robot.driveTrain.target(x,deadband,min,max);
+    	y = Robot.driveTrain.target(y,deadband,min,max);
+    	r = Robot.driveTrain.target(r,deadband,.3,.3);
     	
-    	//Scale the StickValue 
-    	x = x * speedScale;
-    	y = y * speedScale;
-    	r = r * speedScale;
-    	
-    	//x = Robot.driveTrain.target(x,deadband,min,max);
-    	//y = Robot.driveTrain.target(y,deadband,min,max);
-    	//r = Robot.driveTrain.target(r,deadband,min,max);
-    	
-    	
-    	//Run Robot Orianted
-    	gyro = 0;
-    	Robot.driveTrain.my_Drive_Mecanum(-x, -y, r, gyro);
+    	Robot.driveTrain.my_Drive_Mecanum(-x, -y, r, 0);// Robot.driveTrain.my_Get_Gyro());
     }
 
     // Make this return true when this Command no longer needs to run execute()

@@ -16,7 +16,7 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.JoystickButton"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot2.Robot"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.command.Scheduler"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot2.Robot"/>
 </qualifiedTypeNameHistroy>

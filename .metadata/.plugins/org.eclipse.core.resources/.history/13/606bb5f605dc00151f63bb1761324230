@@ -77,13 +77,6 @@ public class DriveTrain extends Subsystem {
     	return robot_Gyro.getAngle();
     }
     
-    public double my_Deadband(double stickValue, double deadband){
-    	if(Math.abs(stickValue)<deadband){
-    		stickValue=0;
-    	}
-    	return stickValue;
-    }
-    	
     public double target(double target,double deadband, double min, double max){
     	if(Math.abs(target)<deadband){
     		target=0;
