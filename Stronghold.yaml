@@ -220,7 +220,7 @@ Children:
         validators: null
         value: []
       Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Default Command, type: Command, validators: null, value: None}
+        name: Default Command, type: Command, validators: null, value: Drive Robot Field Oriented Mecanum}
       Constants: !!robotbuilder.data.properties.ConstantsProperty
         default: []
         name: Constants
@@ -322,22 +322,6 @@ Children:
         value: &id012 []
     Base: Subsystem
     Name: Claw
-  - Children: []
-    Properties:
-      Default command parameters: !!robotbuilder.data.properties.ParametersProperty
-        default: []
-        name: Default command parameters
-        validators: null
-        value: []
-      Default Command: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
-        name: Default Command, type: Command, validators: null, value: None}
-      Constants: !!robotbuilder.data.properties.ConstantsProperty
-        default: []
-        name: Constants
-        validators: null
-        value: *id012
-    Base: Subsystem
-    Name: Scissors
   - Children:
     - Children: []
       Properties:
@@ -603,6 +587,24 @@ Children:
       Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
         name: Requires, type: Subsystem, validators: null, value: drive Train}
       Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: &id017 []
+        name: Parameter presets
+        validators: null
+        value: *id017
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Command
+    Name: Drive Robot Field Oriented Mecanum
+  - Children: []
+    Properties:
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default: []
+        name: Parameters
+        validators: null
+        value: []
+      Requires: !!robotbuilder.data.properties.TypeSelectionProperty {default: None,
+        name: Requires, type: Subsystem, validators: null, value: drive Train}
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
         default: []
         name: Parameter presets
         validators: null
@@ -648,6 +650,39 @@ Children:
         name: Button on SmartDashboard, validators: null, value: false}
     Base: Command
     Name: Wrist_to_Pick_Angle
+  - Children: []
+    Properties:
+      Parameters: !!robotbuilder.data.properties.ParametersProperty
+        default:
+        - &id018 !!robotbuilder.data.properties.ParameterDescriptor {name: setpoint,
+          type: double}
+        name: Parameters
+        validators: null
+        value:
+        - *id018
+      Requires: !!robotbuilder.data.properties.ComponentSelectionProperty
+        componentName: PID Subsystem
+        default: None
+        name: Requires
+        validators: [TypeDropdownSelected]
+        value: WristPID
+      Parameter presets: !!robotbuilder.data.properties.ParameterSetProperty
+        default: &id019
+        - !!robotbuilder.data.properties.ParameterSet
+          name: Stow
+          parameters:
+          - {name: setpoint, type: double, value: '90'}
+        - !!robotbuilder.data.properties.ParameterSet
+          name: Pick
+          parameters:
+          - {name: setpoint, type: double, value: '0'}
+        name: Parameter presets
+        validators: null
+        value: *id019
+      Button on SmartDashboard: !!robotbuilder.data.properties.BooleanProperty {default: true,
+        name: Button on SmartDashboard, validators: null, value: true}
+    Base: Setpoint Command
+    Name: Wrist_to_Angle
   Properties: {}
   Base: Commands
   Name: Commands

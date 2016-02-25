@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.Stronghold.Robot"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.Stronghold_Advanced.RobotMap.RobotSetting"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.Stronghold_Advanced.subsystems.NordicSpeedController"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Counter"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SendableChooser"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.Stronghold_Advanced.subsystems.ScissorPID"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Relay"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogPotentiometer"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.Stronghold_Advanced.Robot"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.Robot"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Encoder"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive.MotorType"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.JoystickButton"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot2.Robot"/>
 </qualifiedTypeNameHistroy>

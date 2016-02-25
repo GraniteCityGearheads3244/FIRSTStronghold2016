@@ -39,6 +39,7 @@ public class Wrist_to_Stow_Angle extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize(){
+    	Robot.wristPID.enable();
     	double setpoint = RobotSetting.WRIST_STOW_POSITION.get();
     	Robot.wristPID.setSetpoint(setpoint);
     }
@@ -49,7 +50,7 @@ public class Wrist_to_Stow_Angle extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+    	 return Robot.wristPID.onTarget();
     }
 
     // Called once after isFinished returns true

@@ -42,7 +42,7 @@ public class DriveRobotOrientedMecanum extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.driveTrain.My_Mecanum_Drive(Robot.oi.xbox.getRawAxis(1), Robot.oi.xbox.getRawAxis(2), Robot.oi.xbox.getRawAxis(4), 0);
+    	Robot.driveTrain.My_Mecanum_Drive(Robot.oi.xbox.getRawAxis(1),Robot.oi.xbox.getRawAxis(0),Robot.oi.xbox.getRawAxis(4), 0);
     }
 
     // Make this return true when this Command no longer needs to run execute()

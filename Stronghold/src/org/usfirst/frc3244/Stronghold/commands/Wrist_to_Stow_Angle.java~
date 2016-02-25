@@ -13,6 +13,7 @@ package org.usfirst.frc3244.Stronghold.commands;
 
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc3244.Stronghold.Robot;
+import org.usfirst.frc3244.Stronghold.RobotMap.RobotSetting;
 
 /**
  *
@@ -38,7 +39,9 @@ public class Wrist_to_Stow_Angle extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize(){
-    	Robot.wristPID.setSetpoint(90);
+    	Robot.wristPID.enable();
+    	double setpoint = RobotSetting.WRIST_STOW_POSITION.get();
+    	Robot.wristPID.setSetpoint(setpoint);
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -47,7 +50,7 @@ public class Wrist_to_Stow_Angle extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+    	 return Robot.wristPID.onTarget();
     }
 
     // Called once after isFinished returns true
