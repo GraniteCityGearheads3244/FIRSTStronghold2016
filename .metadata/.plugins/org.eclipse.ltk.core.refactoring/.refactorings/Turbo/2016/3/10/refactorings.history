@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.usfirst.frc3244.Turbo.commands.NomalSelect&apos; to &apos;NormalSelect&apos;&#x0D;&#x0A;- Original project: &apos;Turbo&apos;&#x0D;&#x0A;- Original element: &apos;org.usfirst.frc3244.Turbo.commands.NomalSelect&apos;&#x0D;&#x0A;- Renamed element: &apos;org.usfirst.frc3244.Turbo.commands.NormalSelect&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NomalSelect&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.usfirst.frc3244.Turbo.commands{NomalSelect.java[NomalSelect" matchStrategy="1" name="NormalSelect" qualified="false" references="true" similarDeclarations="true" stamp="1456797913889" textual="false" version="1.0"/>
+</session>
