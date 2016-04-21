@@ -22,7 +22,12 @@ package org.usfirst.frc3244.SirAntsABot;
     * 					This will get over written when Java is generated in Robotbuilder
     * 					NOTE : REMOVED ALL WRIST TO SMARTDASHBOAD BUTTON CHECKS IN ROBOTBUILDER
     * 				
-    * 4-6-2016	Tring to Build the Auto Drive Under Lower bar code to shoot or not
+    * 4-6-2016	Trying to Build the Auto Drive Under Lower bar code to shoot or not
+    * 
+    * 4-17-2016 Trying to straighten up the negative values to DriveTrain so in code it make sense.
+    * 4-17-2016 Must fix "Drive_Robot_Orianted_Distance" isFinished    * 
+    * 4-17-2016 teleopPeriodic() had two calls to Scheduler.getInstance().run();
+    * 
     */
 
 import edu.wpi.first.wpilibj.IterativeRobot;
@@ -44,10 +49,11 @@ import org.usfirst.frc3244.SirAntsABot.subsystems.*;
  */
 public class Robot extends IterativeRobot {
 
-	 Command autonomousCommand;
+	Command autonomousCommand;
 	private Integer scancount = 0 ;
 	private Integer sequence = 0 ;
 	private Integer count = 0;
+	private String autonomousSelected;
 	public static SendableChooser autonomousChooser;
 	public static SendableChooser goalChooser;
 
@@ -107,7 +113,7 @@ public class Robot extends IterativeRobot {
     }
     private void setupAutomousChooser(){
     	//Create the Auto Chooser
-    	//SmartDashboard.putString("autonomous Title", "Autonomous Choise");
+    	//SmartDashboard.putString("autonomous Title", "Autonomous Choice");
         autonomousChooser = new SendableChooser();
         autonomousChooser.addDefault("0: Reach Edge Of Obstical", new Auto_00_ReachEdgeOfObstical());
         autonomousChooser.addObject("1: Do Nothing:", new Auto_01_DoNothing());
@@ -140,12 +146,20 @@ public class Robot extends IterativeRobot {
         Scheduler.getInstance().run();
         scancount  = scancount+1;
         Robot.oi.launchPad.setOutputs(sequence);
+        
+       
+        
         int pattern = 1;
         
 		if (pattern == 0){
 			if (scancount > 10){
 	        	sequence = sequence+1;
 	        	scancount = 0;
+	
+	        	//Test SmartDashboar Send the current AutoChoice
+	        	 autonomousSelected = autonomousChooser.getSelected().toString();
+	             SmartDashboard.putString("Auto Choice", autonomousSelected);
+	             
 	        }
 	        if (sequence > 2048){
 	        	sequence = 0;
@@ -169,16 +183,12 @@ public class Robot extends IterativeRobot {
     public void autonomousInit() {
     	Robot.oi.launchPad.setOutputs(0);
     	//Maybe Will Want to do this here too!!!!!!!!!
-    	//driveTrain.my_zeroHeading(true);
-    	//autonomousCommand = new Auto_02_Straight_Under_LowBar();//
+    	//driveTrain.my_zeroHeading(true);    	
+    	autonomousCommand = (Command) autonomousChooser.getSelected(); 
     	
-    	//autonomousCommand = (Command) autonomousChooser.getSelected(); //new AutonomousCommand();
+    	///********* Force this 
     	
-    	///********* Fource this 
-    	
-    	autonomousCommand = new Auto_02_Straight_Under_LowBar();
-    	
-    	
+    	//autonomousCommand = new Auto_02_Straight_Under_LowBar();
     	
     	//Maybe try to do this????
     	//if (autonomousCommand == null) autonomousCommand = new Auto_00_ReachEdgeOfObstical();
@@ -201,6 +211,8 @@ public class Robot extends IterativeRobot {
         // continue until interrupted by another command, remove
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
+        
+        //Clear the Driver station Operator panel Outputs
         Robot.oi.launchPad.setOutputs(0);
     }
 
@@ -210,7 +222,9 @@ public class Robot extends IterativeRobot {
     public void teleopPeriodic() {
         Scheduler.getInstance().run();
         updateStatus();
-        Scheduler.getInstance().run();
+        
+        //Why are there two calls to this?
+        //Scheduler.getInstance().run();
         
         
     }

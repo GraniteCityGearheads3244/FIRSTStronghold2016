@@ -53,10 +53,10 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Ultrasonic"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogInput"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Drive_Robot_Orianted_Distance"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Drive_Robot_Orianted_Distance_FullPower"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Drive_Speed"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.RobotMap"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Wrist_To_Setpoint"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
 </qualifiedTypeNameHistroy>
