@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.Stronghold.Robot"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.Stronghold_Advanced.RobotMap.RobotSetting"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.Stronghold_Advanced.subsystems.NordicSpeedController"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Counter"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.Stronghold_Advanced.subsystems.ScissorPID"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Relay"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogPotentiometer"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon"/>
@@ -39,13 +34,11 @@
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.subsystems.WristPID"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Auto_04_Straight_Over_RoughtTerrain"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Auto_Drive_OverObstical"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.PinBall_Reset"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.SeaLeg_Left_Return_TDC"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.SeaLegs_Reference_Left"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.SeaLegs_Left_Return_to_TDC"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.PinBall_Cycle_SOFT"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.Robot"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.LaunchPad_Output_Control"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Auto_Score_Ball_In_Goal"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.JoystickButton"/>
@@ -54,9 +47,17 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogInput"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Drive_Robot_Orianted_Distance"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Drive_Robot_Orianted_Distance_FullPower"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Drive_Speed"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.RobotMap"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Wrist_To_Setpoint"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.Robot"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Auto_Cycle_Shoot_Ball"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Auto_21_Demo_02"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Auto_22_Demo_03_Drive_N_Score"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.PinBall_Reset"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Preferences"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Wrist_To_Setpoint"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.RobotMap"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.RobotMap.RobotDriveTrainSettings"/>
 </qualifiedTypeNameHistroy>
