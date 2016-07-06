@@ -1,19 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Relay"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogPotentiometer"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.Stronghold_Advanced.Robot"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Encoder"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.RobotDrive.MotorType"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.command.Scheduler"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot2.subsystems.DriveTrain"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot2.Robot"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot2.commands.Drive_Speed"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.Turbo.RobotMap"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.Turbo.Robot"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.Button"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.RobotMap.RobotSetting"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Drive_Reset_All_Encoders"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.RobotMap.RobotSeaLegsSettings"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.InternalButton"/>
@@ -48,16 +34,30 @@
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Drive_Robot_Orianted_Distance"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Drive_Robot_Orianted_Distance_FullPower"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Drive_Speed"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.Robot"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Auto_Cycle_Shoot_Ball"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Auto_21_Demo_02"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Auto_22_Demo_03_Drive_N_Score"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.PinBall_Reset"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Preferences"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Wrist_To_Setpoint"/>
-<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.RobotMap"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.RobotMap.RobotDriveTrainSettings"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.RobotMap"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Claw_To_Position"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.subsystems.Vision"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Vision_Start"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.RobotMap.RobotClawGearSettings"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Relay.Value"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.Button"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Vision_Light_Toggle"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DriverStation"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Auto_Track_Target"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.networktables.NetworkTable"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Auto_Track_Target_Center"/>
+<fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.Robot"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.PIDController"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
 </qualifiedTypeNameHistroy>

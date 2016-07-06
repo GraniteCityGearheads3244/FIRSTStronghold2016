@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DemoToggle_Command.java&apos; to &apos;SirAntsABot_Summer/src/org.usfirst.frc3244.SirAntsABot.commands&apos;&#x0D;&#x0A;- Original project: &apos;Copy of SirAntsABot_Talahi&apos;&#x0D;&#x0A;- Destination element: &apos;SirAntsABot_Summer/src/org.usfirst.frc3244.SirAntsABot.commands&apos;&#x0D;&#x0A;- Original element: &apos;org.usfirst.frc3244.SirAntsABot.commands.DemoToggle_Command.java&apos;" description="Copy compilation unit" destination="=SirAntsABot_Summer/src&lt;org.usfirst.frc3244.SirAntsABot.commands" element1="/src&lt;org.usfirst.frc3244.SirAntsABot.commands{DemoToggle_Command.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1465921564774" units="1" version="1.0"/>
+</session>

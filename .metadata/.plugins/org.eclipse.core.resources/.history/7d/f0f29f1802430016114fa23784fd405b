@@ -1,0 +1,73 @@
+package org.usfirst.frc3244.SirAntsABot.commands;
+
+import edu.wpi.first.wpilibj.command.Command;
+import org.usfirst.frc3244.SirAntsABot.Robot;
+import org.usfirst.frc3244.SirAntsABot.RobotMap;
+
+/**
+ *
+ */
+public class Auto_Track_Target_Center extends Command {
+
+    private static final int image_Width = 350;
+	private double error=0;
+
+	public Auto_Track_Target_Center() {
+        // Use requires() here to declare subsystem dependencies
+        // eg. requires(chassis);
+		requires(Robot.driveTrain);
+    }
+
+    // Called just before this Command runs the first time
+    protected void initialize() {
+    	System.out.println("Auto_Track_Target_Center init");
+    }
+
+    // Called repeatedly when this Command is scheduled to run
+    protected void execute() {
+    	double[] i = Robot.grip.getNumberArray("myContoursReport/centerX", new double[0]);
+    	if(i.length>0){
+    		System.out.println("Yes");
+    		double centerX = i[0];
+    		error = (centerX-(image_Width/2));
+    	}else{
+    		System.out.println("No");
+    		double centerX = 0;
+    		error = (centerX-(image_Width/2));
+    	}
+    	
+    	/*
+    	for (double x_target_01 : Robot.grip.getNumberArray("myContoursReport/centerX", new double[0])) {
+    		//System.out.println("centerX=" +  x_target_01);   
+    		double centerX = x_target_01;
+    		error = (centerX-(image_Width/2));
+    		
+    	}
+    	*/
+    	
+    	System.out.println("ErrorX=" +  error);
+    	//Robot.driveTrain.my_Drive_Mecanum(0, 0, error*.005, 0);
+    	
+    	
+    	
+    	
+    	
+    	//for (double area : Robot.grip.getNumberArray("myContoursReport/area", new double[0])) {
+        //    System.out.println("Got contour with area=" + area);
+        //}
+    }
+
+    // Make this return true when this Command no longer needs to run execute()
+    protected boolean isFinished() {
+        return false;
+    }
+
+    // Called once after isFinished returns true
+    protected void end() {
+    }
+
+    // Called when another command which requires one or more of the same
+    // subsystems is scheduled to run
+    protected void interrupted() {
+    }
+}

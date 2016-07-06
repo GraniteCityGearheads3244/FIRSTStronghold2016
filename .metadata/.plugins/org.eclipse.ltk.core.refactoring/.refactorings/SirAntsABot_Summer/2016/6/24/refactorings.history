@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.usfirst.frc3244.SirAntsABot.commands.DemoToggle_Command&apos; to &apos;x_DemoToggle_Command&apos;&#x0D;&#x0A;- Original project: &apos;SirAntsABot_Summer&apos;&#x0D;&#x0A;- Original element: &apos;org.usfirst.frc3244.SirAntsABot.commands.DemoToggle_Command&apos;&#x0D;&#x0A;- Renamed element: &apos;org.usfirst.frc3244.SirAntsABot.commands.x_DemoToggle_Command&apos;&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DemoToggle_Command&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.usfirst.frc3244.SirAntsABot.commands{DemoToggle_Command.java[DemoToggle_Command" matchStrategy="1" name="x_DemoToggle_Command" qualified="false" references="false" similarDeclarations="false" stamp="1465488264976" textual="false" version="1.0"/>
+</session>
