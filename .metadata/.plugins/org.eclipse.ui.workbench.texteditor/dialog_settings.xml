@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="SeaLegs_Return_To_TDC" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="private final NetworkTable"/>
-			<item value="power"/>
-			<item value="Secure_Ball"/>
-			<item value="snailStick_1"/>
-			<item value="snal"/>
-			<item value="snale"/>
-			<item value="paradeAction"/>
-			<item value="Demo"/>
+			<item value="SeaLegs_Return_To_TDC"/>
+			<item value="a_1"/>
+			<item value="y_1"/>
+			<item value="i="/>
+			<item value="demo"/>
+			<item value="Reset"/>
+			<item value="DemoToggle"/>
+			<item value="ScissorToClimb"/>
 		</list>
 		<list key="replacehistory">
 			<item value="Deploy"/>
