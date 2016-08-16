@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="SeaLegs_Return_To_TDC" key="selection"/>
+		<item value="getPIDController" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="tostring"/>
+			<item value="x_Test"/>
+			<item value="stopMotor"/>
 			<item value="SeaLegs_Return_To_TDC"/>
 			<item value="a_1"/>
 			<item value="y_1"/>
 			<item value="i="/>
 			<item value="demo"/>
-			<item value="Reset"/>
-			<item value="DemoToggle"/>
-			<item value="ScissorToClimb"/>
 		</list>
 		<list key="replacehistory">
 			<item value="Deploy"/>

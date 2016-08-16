@@ -148,4 +148,10 @@ public class NordicSpeedController extends PIDSubsystem implements SpeedControll
 		// TODO Auto-generated method stub
 		return false;
 	}
+
+	@Override
+	public void stopMotor() {
+		// TODO Auto-generated method stub
+		
+	}
 }
