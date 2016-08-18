@@ -269,44 +269,9 @@ public class RobotMap {
         LiveWindow.addActuator("Camera", "Camera_Light", cameraLight);
         US_Sensor = new AnalogInput(4);
         LiveWindow.addSensor("DriveTrain", "UltraSonic", US_Sensor);
-        
-      //Set the SeaLeg Encoders up
-        //seaLegs_Left_PIDEncoder_Left.setDistancePerPulse(RobotSeaLegsSettings.ENCODER_DISTANCEPERPULSE.get());
-        //seaLegs_Right_PIDEncoder_Right.setDistancePerPulse(RobotSeaLegsSettings.ENCODER_DISTANCEPERPULSE.get());
-        //Simple DriveTrain
-        
+     
         driveTrainRobotDrive41 = new RobotDrive(driveTrainMotor_Left_Front, driveTrainMotor_Left_Rear,
                 driveTrainMotor_Right_Front, driveTrainMotor_Right_Rear);
-          
-        
-
-        //Start Code to use the NorticSpeedControler
-        /** This Section is to use the Nordic Speed Controler
-        driveTrainEncoder_Left_Front.setDistancePerPulse(RobotSetting.DRIVETRAIN_ENCODER_TO_360.get());
-        driveTrainEncoder_Left_Rear.setDistancePerPulse(RobotSetting.DRIVETRAIN_ENCODER_TO_360.get());
-        driveTrainEncoder_Right_Front.setDistancePerPulse(RobotSetting.DRIVETRAIN_ENCODER_TO_360.get());
-        driveTrainEncoder_Right_Rear.setDistancePerPulse(RobotSetting.DRIVETRAIN_ENCODER_TO_360.get());
-        double p = 0.01;
-        double i = 0.00;
-        double d = 0;
-        nordicLF = new NordicSpeedController(driveTrainMotor_Left_Front, driveTrainEncoder_Left_Front,p,i,d);
-        nordicLR = new NordicSpeedController(driveTrainMotor_Left_Rear, driveTrainEncoder_Left_Rear,p,i,d);
-        nordicRF = new NordicSpeedController(driveTrainMotor_Right_Front, driveTrainEncoder_Right_Front,p,i,d);
-        nordicRR = new NordicSpeedController(driveTrainMotor_Right_Rear, driveTrainEncoder_Right_Rear,p,i,d);
-        
-        driveTrainRobotDrive41 = new RobotDrive(nordicLF, nordicLR, nordicRF, nordicRR);
-        
-        //Had to phyisiclay reverse Wires!!!
-        //driveTrainRobotDrive41.setInvertedMotor(RobotDrive.MotorType.kFrontRight, true);
-        //driveTrainRobotDrive41.setInvertedMotor(RobotDrive.MotorType.kRearRight, true);
-        //driveTrainRobotDrive41.setInvertedMotor(RobotDrive.MotorType.kFrontLeft, true);
-        //driveTrainRobotDrive41.setInvertedMotor(RobotDrive.MotorType.kRearLeft, true);
-        */
-          
-        driveTrainRobotDrive41.setSafetyEnabled(true);
-        driveTrainRobotDrive41.setExpiration(0.1);
-        driveTrainRobotDrive41.setSensitivity(0.5);
-        driveTrainRobotDrive41.setMaxOutput(1.0);
         
         //Start SeaLeg Code
         
