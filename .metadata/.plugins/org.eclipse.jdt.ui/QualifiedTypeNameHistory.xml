@@ -57,7 +57,7 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.command.PIDSubsystem"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Drive_Robot_Robot_Oriented_Mecanum"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.PinBall_Reset"/>
 <fullyQualifiedTypeName name="org.usfirst.frc3244.SirAntsABot.commands.Vision_Light_Toggle"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.smartdashboard.SmartDashboard"/>
 </qualifiedTypeNameHistroy>
