@@ -58,42 +58,6 @@ public class SeaLegs_Jog_FWD extends Command {
     	
     	Robot.seaLegs.my_SeaLegs_drive_Tank(power, power);
     	
-    	//This Code Is for Auto TDC not working well
-    	/**
-    	 * 
-    	
-    	double powerFWD = Robot.oi.xbox_1.getRawAxis(3);
-    	double powerREV = -1 * Robot.oi.xbox_1.getRawAxis(2);
-    
-    	double power = Robot.seaLegs.target(powerFWD + powerREV,.1,-0.85,0.85);
-    	
-    	if(Math.abs(power)>0){
-    		Robot.seaLegs.my_SeaLegs_drive_Tank(power, power);
-    	}else{
-    		m_SeaLeg_Left_Pos = Robot.seaLegs.my_Get_Left_Encoder();
-        	m_SeaLeg_Right_Pos = Robot.seaLegs.my_Get_Right_Encoder();
-        	
-        	m_SeaLeg_Left_delta_to_TDC = m_SeaLeg_Left_Pos % 360;
-        	m_SeaLeg_Right_delta_to_TDC = m_SeaLeg_Right_Pos % 360;
-
-        	double left_kp = 0.2;
-        	double right_kp = 0.2;
-        	
-        	double powerLeft = Robot.seaLegs.target(m_SeaLeg_Left_delta_to_TDC * left_kp, 0, -0.75, 0.75);
-        	double powerRight = Robot.seaLegs.target(m_SeaLeg_Right_delta_to_TDC * right_kp, 0, -0.75, 0.75);
-        	
-        	//force power Off if on switch
-        	if(Robot.seaLegs.my_SeaLeg_Left_At_TDC()){
-        		powerLeft=0.0;
-        	}
-        	if(Robot.seaLegs.my_SeaLeg_Right_At_TDC()){
-        		powerRight=0.0;
-        	}
-        	Robot.seaLegs.my_SeaLegs_drive_Tank(-powerLeft, -powerRight);
-        	
-        	 
-    	}
-    */
     }
 
     // Make this return true when this Command no longer needs to run execute()
